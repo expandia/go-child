@@ -1,0 +1,33 @@
+.header {
+	max-width: $site__width;
+	@include b(r) {
+		max-width: 100%;
+	}
+	margin: auto;
+	padding: 1rem 0;
+	background-color: $color__primary;
+	display: flex;
+}
+.header__logo {
+	height: 2rem;
+	margin: 0.5rem 0.5rem 0.5rem 2rem;
+}
+.header__left {
+	width: 50%;
+	padding-left: em(40px);
+	@include b(m) {
+		padding-left: 5%;
+	}
+}
+.header__right {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: em(50px);
+}
+.side-menu__opener {
+	width: em(20px);
+	height: em(20px);
+	cursor: pointer;
+}
